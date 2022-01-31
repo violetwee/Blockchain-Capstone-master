@@ -57,6 +57,7 @@ truffle test
 cd eth-contracts
 truffle deploy --network rinkeby --reset
 ```
+
 <img src="https://github.com/violetwee/Blockchain-Capstone-master/blob/main/images/deployment.png" width="800px" height="auto"/>
 
 <img src="https://github.com/violetwee/Blockchain-Capstone-master/blob/main/images/deployment.png" width="800px" height="auto"/>
@@ -64,6 +65,7 @@ truffle deploy --network rinkeby --reset
 # Zokrates
 
 We require the generated verfiier.sol to be in ABI v1, therefore we will use an older Zokrates version (v0.4.10).
+
 - Zokrates v0.4.10: https://github.com/Zokrates/ZoKrates/releases/tag/0.4.10
 
 On MacOSX, download and unzip zokrates-0.4.10-i686-apple-darwin.tar.gz.
@@ -82,11 +84,12 @@ Copy and paste the files to zokrates/code/square directory.
 
 # Minting NFTs to OpenSea
 
-This will mint 3 NFTs to OpenSea Testnet.
-Token ids 10, 11 and 12.
+This will mint 5 NFTs to OpenSea Testnet.
+Token ids 10 to 14.
 
 You may access the NFT at
 https://testnets.opensea.io/assets/. Append the SolnSquareVerifier Contract Address and TokenId to view a specific NFT.
+
 - Eg. https://testnets.opensea.io/assets/0x695b253d8212908b976e00fd958671b3d95565e1/10
 
 ```sh
@@ -114,7 +117,7 @@ Minting
 - Token #11 / Transaction: 0x1344c00d1cacf6ae34858bafefcaf7ea5197635c8791370591b95ffa803d1e17
 - Token #12 / Transaction: 0x95c40164c49ddcece36e9f0fb395900dda798c06450e8597e610df9ac2914cb8
 - Token #13 / Transaction: 0x82c6a67193ba4945445feb4d5581d4af20938bab4d7e03f30dc6d5162b30d300
-- Token #14 /Transaction: 0x5344685f767de57dafe7ff0562c7550e090be3621cdb3e42889bfe7f930bcfa4
+- Token #14 / Transaction: 0x5344685f767de57dafe7ff0562c7550e090be3621cdb3e42889bfe7f930bcfa4
 
 # Project Resources
 
