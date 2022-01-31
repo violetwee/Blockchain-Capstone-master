@@ -82,7 +82,7 @@ This will mint 3 NFTs to OpenSea Testnet.
 Token ids 10, 11 and 12.
 
 You may access the NFT at 
-https://testnets.opensea.io/assets/. Append <SolnSquareVerifier Contract Address>/<TokenId> to view a specific NFT.
+https://testnets.opensea.io/assets/. Append the SolnSquareVerifier Contract Address and TokenId to view a specific NFT.
 - Eg. https://testnets.opensea.io/assets/0x695b253d8212908b976e00fd958671b3d95565e1/10
 
 ```sh
