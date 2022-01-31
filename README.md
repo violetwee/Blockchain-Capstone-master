@@ -47,7 +47,7 @@ truffle migrate --reset
 truffle test
 ```
 
-All 10 tests should pass.
+<img src="https://github.com/violetwee/Blockchain-Capstone-master/blob/main/images/test-cases.png" width="800px" height="auto"/>
 
 # Deploy to Rinkeby
 
