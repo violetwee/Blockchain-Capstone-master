@@ -8,7 +8,7 @@ const isInfura = !!process.env.INFURA_KEY;
 const OWNER_ADDRESS = process.env.OWNER_ADDRESS;
 const NETWORK = process.env.NETWORK;
 
-let tokenId = 10;
+let tokenId = 13;
 
 if (!MNEMONIC || !NODE_API_KEY || !OWNER_ADDRESS) {
   console.error(
