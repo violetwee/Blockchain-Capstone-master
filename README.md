@@ -55,6 +55,7 @@ truffle test
 cd eth-contracts
 truffle deploy --network rinkeby --reset
 ```
+<img src="https://github.com/violetwee/Blockchain-Capstone-master/blob/main/images/deployment.png" width="800px" height="auto"/>
 
 # Zokrates
 
