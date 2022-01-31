@@ -103,7 +103,7 @@ Marketplace Storefront: https://testnets.opensea.io/collection/remarket-v3
 
 ## Completed Transactions
 
-Minting
+# Minting
 
 - Token #10 / Transaction: 0xd235d9856e923d25c1356d51b8cf1f372dc3e67f94494ddbfe295c654764df21
 - Token #11 / Transaction: 0x02e30ada88e4db6aa2b0cc2310ec2dd254686b19ce76082abf3070481bca28ee
@@ -111,7 +111,7 @@ Minting
 - Token #13 / Transaction: 0x440803f8fd12298114a7cc51efe5b8da4fe92826d139613f23f176a52bcc11f5
 - Token #14 / Transaction: 0x6534223c45f39b06d81338431780048fba0ced32324c8973ece48278fc55eed7
 
-  Transfers
+# Transfers
 
 - Token #10 / Transaction: 0x7534aebfb88b750c4453f50966d109f133a999cd29a0f360916d596eb727d0d0
 - Token #11 / Transaction: 0x1344c00d1cacf6ae34858bafefcaf7ea5197635c8791370591b95ffa803d1e17
