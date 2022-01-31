@@ -81,7 +81,8 @@ Copy and paste the files to zokrates/code/square directory.
 This will mint 3 NFTs to OpenSea Testnet.
 Token ids 10, 11 and 12.
 
-You may access the NFT at https://testnets.opensea.io/assets/<SolnSquareVerifier Contract Address>/<TokenId>.
+You may access the NFT at 
+https://testnets.opensea.io/assets/. Append <SolnSquareVerifier Contract Address>/<TokenId> to view a specific NFT.
 - Eg. https://testnets.opensea.io/assets/0x695b253d8212908b976e00fd958671b3d95565e1/10
 
 ```sh
