@@ -24,7 +24,7 @@ import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 //  - make sure you handle metadata as well as tokenSuplly
 
 contract SolnSquareVerifier is ERC721MintableComplete {
-    Verifier private verifierContract = new Verifier();
+    Verifier private verifierContract;
 
     struct Solution {
         uint256 index;
@@ -32,36 +32,33 @@ contract SolnSquareVerifier is ERC721MintableComplete {
         bool minted;
     }
 
-    Solution[] private solutions;
     mapping(bytes32 => Solution) uniqueSolutions;
     uint256 public counter = 0;
 
-    event SolutionAdded(uint256 index);
+    event SolutionAdded(uint256 counter, uint256 index, address owner);
 
-    constructor(string memory name, string memory symbol)
-        public
-        ERC721MintableComplete(name, symbol)
-    {}
+    constructor(
+        string memory name,
+        string memory symbol,
+        address contractAddress
+    ) public ERC721MintableComplete(name, symbol) {
+        verifierContract = Verifier(contractAddress);
+    }
 
     function getCounter() public view returns (uint256) {
         return counter;
     }
 
-    // input formats are based on data in proof.json
-    // only add verified solutions
     function addSolution(
-        uint256[2] memory a,
-        uint256[2][2] memory b,
-        uint256[2] memory c,
-        uint256[2] memory input
+        bytes32 key,
+        uint256 index,
+        address owner,
+        bool minted
     ) public {
-        bytes32 key = keccak256(abi.encodePacked(input[0], input[1]));
-
-        Solution memory newSolution = Solution(counter, msg.sender, false);
-        solutions.push(newSolution);
+        Solution memory newSolution = Solution(index, owner, minted);
         uniqueSolutions[key] = newSolution;
 
-        emit SolutionAdded(counter);
+        emit SolutionAdded(counter, index, owner);
         counter = counter.add(1);
     }
 
@@ -79,7 +76,7 @@ contract SolnSquareVerifier is ERC721MintableComplete {
         bool verified = verifierContract.verifyTx(a, b, c, input);
         require(verified, "Solution cannot be verified");
 
-        addSolution(a, b, c, input);
+        addSolution(key, tokenId, msg.sender, true);
         super.mint(to, tokenId);
     }
 }

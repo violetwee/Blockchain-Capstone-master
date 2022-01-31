@@ -17,7 +17,7 @@ contract Ownable {
     address public _owner;
     event OwnershipChanged(address newOwner);
 
-    constructor() internal {
+    constructor() public {
         _owner = msg.sender;
         emit OwnershipChanged(msg.sender);
     }
@@ -34,6 +34,10 @@ contract Ownable {
             _owner = newOwner;
             emit OwnershipChanged(_owner);
         }
+    }
+
+    function getOwner() public view returns (address) {
+        return _owner;
     }
 }
 
