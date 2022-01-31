@@ -10,13 +10,13 @@ Once it is verified, we will mint the NFT and place it on the blockchain market 
 
 # Requirements
 
-Ganache CLI v6.12.2 (ganache-core: 2.13.2)
-Truffle v5.4.23 (core: 5.4.23)
-Solidity v0.5.16 (solc-js)
-Node v15.2.0
-Web3.js v1.5.3
-MetaMask v10.8.1
-Infura
+- Ganache CLI v6.12.2 (ganache-core: 2.13.2)
+- Truffle v5.4.23 (core: 5.4.23)
+- Solidity v0.5.16 (solc-js)
+- Node v15.2.0
+- Web3.js v1.5.3
+-MetaMask v10.8.1
+- Infura
 
 # Contract Addresses (Rinkeby)
 
@@ -59,7 +59,7 @@ truffle deploy --network rinkeby --reset
 # Zokrates
 
 We require the generated verfiier.sol to be in ABI v1, therefore we will use an older Zokrates version (v0.4.10).
-Zokrates v0.4.10: https://github.com/Zokrates/ZoKrates/releases/tag/0.4.10
+- Zokrates v0.4.10: https://github.com/Zokrates/ZoKrates/releases/tag/0.4.10
 
 On MacOSX, download and unzip zokrates-0.4.10-i686-apple-darwin.tar.gz.
 The run the following from the directory:
@@ -81,7 +81,7 @@ This will mint 3 NFTs to OpenSea Testnet.
 Token ids 10, 11 and 12.
 
 You may access the NFT at https://testnets.opensea.io/assets/<SolnSquareVerifier Contract Address>/<TokenId>.
-Eg. https://testnets.opensea.io/assets/0x695b253d8212908b976e00fd958671b3d95565e1/10
+- Eg. https://testnets.opensea.io/assets/0x695b253d8212908b976e00fd958671b3d95565e1/10
 
 ```sh
 cd eth-contracts
