@@ -69,7 +69,7 @@ We require the generated verfiier.sol to be in ABI v1, therefore we will use an 
 - Zokrates v0.4.10: https://github.com/Zokrates/ZoKrates/releases/tag/0.4.10
 
 On MacOSX, download and unzip zokrates-0.4.10-i686-apple-darwin.tar.gz.
-The run the following from the directory:
+Then run the following from the directory:
 
 ```sh
 zokrates compile -i <path to square.code>
